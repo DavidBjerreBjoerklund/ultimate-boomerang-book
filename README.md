@@ -6,10 +6,33 @@ The main LaTeX entry point is `UBB.tex`, with chapter content in `tex/` and artw
 
 ## Build
 
-Compile the book from the repository root:
+Use `make build` from the repository root:
 
 ```sh
-pdflatex UBB.tex
+make build
 ```
 
-Run the command more than once if the table of contents or cross references need to settle.
+## Local Setup
+
+macOS:
+
+```sh
+brew install --cask mactex-no-gui
+```
+
+Linux:
+
+```sh
+sudo apt-get update
+sudo apt-get install -y latexmk texlive-latex-extra
+```
+
+Windows:
+
+```powershell
+choco install miktex -y
+```
+
+## GitHub
+
+A GitHub Actions workflow builds the book on Linux and Windows so we catch platform issues early.
