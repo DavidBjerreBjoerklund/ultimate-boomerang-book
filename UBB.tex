@@ -8,11 +8,13 @@
 \usepackage{amssymb}
 \usepackage{array}
 \usepackage{graphicx}
+\usepackage{float}
 \usepackage{subfigure}
 \usepackage{wrapfig}
 \usepackage{xcolor}
 \usepackage[left=1.5cm,right=1.5cm,top=2cm,bottom=1.5cm]{geometry}
 \usepackage{tabulary}
+\usepackage{eso-pic}
 \usepackage{hyperref}
 \eject \pdfpagewidth=3in \pdfpageheight=10in
 
@@ -25,10 +27,16 @@
 \author{Michael Siems}
 \title{The Ultimate Boomerang Book}
 
+\newcommand{\fullpageimage}[1]{%
+  \clearpage
+  \thispagestyle{empty}%
+  \AddToShipoutPicture*{\AtPageLowerLeft{\includegraphics[width=\paperwidth,height=\paperheight]{#1}}}%
+  \null
+  \clearpage
+}
+
 \begin{document}
-\section*{Ultimate Boomerang Book}
-\subsection*{Online Version. Compiled: \today}
-\newpage
+\fullpageimage{cover.png}
 \input{tex/Titlepage.tex}
 \input{tex/Acknowledgements}
 \newpage
@@ -59,4 +67,5 @@
 \input{tex/BoomerangPlans.tex}
 \cleardoublepage
 \input{tex/WordList.tex}
+\fullpageimage{backcover.png}
 \end{document}
