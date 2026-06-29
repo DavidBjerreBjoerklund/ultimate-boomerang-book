@@ -1,0 +1,27 @@
+# macOS and iCloud metadata
+.DS_Store
+._*
+.xdp-*
+
+# LaTeX build output
+*.aux
+*.bcf
+*.blg
+*.bbl
+*.dvi
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.xdv
+
+# Editor and backup files
+*~
+*.bak
+*.tmp
+*.swp

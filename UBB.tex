@@ -1,0 +1,62 @@
+\documentclass[10pt,a5paper]{book}
+\pagestyle{headings}
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage[left=1.5cm,right=1.5cm,top=2cm,bottom=1.5cm]{geometry}
+\usepackage{tabulary}
+\usepackage{hyperref}
+\eject \pdfpagewidth=3in \pdfpageheight=10in
+
+\definecolor{BOrange}{RGB}{239,176,38}
+\hyphenation{boome-rang boome-rang-throwers boome-rangs}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\graphicspath{{Pictures/}}
+
+\author{Michael Siems}
+\title{The Ultimate Boomerang Book}
+
+\begin{document}
+\section*{Ultimate Boomerang Book}
+\subsection*{Online Version. Compiled: \today}
+\newpage
+\input{tex/Titlepage.tex}
+\input{tex/Acknowledgements}
+\newpage
+\cleardoublepage
+\input{tex/Preface}
+% \newpage
+% \input{tex/Motivation}
+\newpage
+\input{tex/HowMyPassionBegan}
+\cleardoublepage
+\tableofcontents
+\newpage	
+\input{tex/TheBasics}
+\cleardoublepage
+\input{tex/TypicalThrowAndConstruction}
+\input{tex/BasicConceptionAndImprovement}
+\cleardoublepage
+\input{tex/ConstructionDisk}
+\cleardoublepage
+\input{tex/CorrectionThrowingConstruction}
+\cleardoublepage
+\input{tex/Games}
+\cleardoublepage
+\input{tex/funEvents}
+\cleardoublepage
+\input{tex/CompetitionEvents}
+\cleardoublepage
+\input{tex/BoomerangPlans.tex}
+\cleardoublepage
+\input{tex/WordList.tex}
+\end{document}
