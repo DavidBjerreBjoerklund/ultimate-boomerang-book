@@ -37,7 +37,12 @@
 }
 
 \begin{document}
-\fullpageimage{cover.png}
+\ifdefined\HCode
+  \coverimage[alt={The Ultimate Boomerang Book cover}]{cover.png}
+  \epubpage
+\else
+  \fullpageimage{cover.png}
+\fi
 \input{tex/Titlepage.tex}
 \input{tex/Acknowledgements}
 \newpage

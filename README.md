@@ -12,6 +12,14 @@ Use `make build` from the repository root:
 make build
 ```
 
+Build the EPUB3 edition with:
+
+```sh
+make epub
+```
+
+The EPUB build generates PNG assets from the EPS/PDF figure sources, builds `build/epub/UBB.epub`, and checks that packaged images and internal chapter/figure/section references resolve.
+
 ## Local Setup
 
 macOS:

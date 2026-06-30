@@ -4,6 +4,7 @@
 .xdp-*
 
 # LaTeX build output
+build/
 *.aux
 *.bcf
 *.blg
@@ -19,6 +20,10 @@
 *.synctex.gz
 *.toc
 *.xdv
+
+# EPUB image assets generated from EPS/PDF sources
+Pictures/*.png
+Pictures/plans/*.png
 
 # Editor and backup files
 *~
